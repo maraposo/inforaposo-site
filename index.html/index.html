@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>INFORAPOSO - Técnico em Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/banner.png" alt="Banner INFORAPOSO" class="banner">
+        <h1>INFORAPOSO</h1>
+        <p>Serviços técnicos com qualidade e confiança</p>
+    </header>
+
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <ul>
+            <li>Reparo de PCs comuns e gamers</li>
+            <li>Montagem e upgrades sob medida</li>
+            <li>Limpeza e substituição de peças</li>
+            <li>Formatação rápida e segura</li>
+            <li>Suporte remoto via TeamViewer ou AnyDesk</li>
+        </ul>
+    </section>
+
+    <section id="orcamentos">
+        <h2>Solicite um Orçamento</h2>
+        <p>Escolha o serviço desejado e clique para abrir o WhatsApp com a mensagem pronta:</p>
+        <ul class="orcamento-lista">
+            <li><a href="https://wa.me/5522992871246?text=Olá%20Mauricio,%20gostaria%20de%20um%20orçamento%20para%20formatação%20de%20PC." target="_blank">💾 Formatação de PC</a></li>
+            <li><a href="https://wa.me/5522992871246?text=Olá%20Mauricio,%20gostaria%20de%20um%20orçamento%20para%20limpeza%20e%20substituição%20de%20peças." target="_blank">🧼 Limpeza e substituição de peças</a></li>
+            <li><a href="https://wa.me/5522992871246?text=Olá%20Mauricio,%20gostaria%20de%20um%20orçamento%20para%20upgrade%20de%20PC%20gamer." target="_blank">🎮 Upgrade de PC Gamer</a></li>
+            <li><a href="https://wa.me/5522992871246?text=Olá%20Mauricio,%20gostaria%20de%20um%20orçamento%20para%20suporte%20remoto." target="_blank">🖥️ Suporte remoto</a></li>
+        </ul>
+    </section>
+
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <blockquote>
+            “Mauricio salvou meu PC gamer em menos de 24h. Atendimento top!”
+            <footer>— João, Nova Friburgo</footer>
+        </blockquote>
+        <blockquote>
+            “Formatação rápida e suporte remoto excelente. Recomendo demais!”
+            <footer>— Carla, Sumidouro</footer>
+        </blockquote>
+    </section>
+
+    <section id="contato">
+        <h2>Fale comigo</h2>
+        <form onsubmit="enviarFormulario(); return false;">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p>📍 Sumidouro – RJ</p>
+        <p>📲 WhatsApp: <span id="numero">22 99287-1246</span></p>
+        <a href="https://wa.me/5522992871246" target="_blank" class="zap">Abrir WhatsApp</a>
+
+        <div class="redes">
+            <h2>Redes Sociais</h2>
+            <a href="https://www.instagram.com/seuusuario" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://www.facebook.com/seuusuario" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://wa.me/5522992871246" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30">
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
