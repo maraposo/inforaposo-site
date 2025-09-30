@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>INFORAPOSO - Técnico em Informática</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="../imagens/banner.png" alt="Banner InfoRaposo">
+        <img src="imagens/banner.png" alt="Banner InfoRaposo">
         <h1>INFORAPOSO</h1>
         <p>Serviços técnicos com qualidade e confiança</p>
     </header>
@@ -52,10 +52,10 @@
         <h2>Fale comigo</h2>
         <form onsubmit="enviarFormulario(); return false;">
             <label for="nome">Seu nome:</label>
-            <input type="text" id="nome" required>
+            <input type="text" id="nome" name="nome" required>
 
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" required></textarea>
+            <textarea id="mensagem" name="mensagem" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="../script.js/script.js"></script>
 </body>
 
 </html>
