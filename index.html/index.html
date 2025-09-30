@@ -8,22 +8,15 @@
 </head>
 
 <body>
-    <header>
-        <img src="../imagens/banner.png" alt="Banner InfoRaposo">
+    <header class="cabecalho-inforaposo">
         <h1>INFORAPOSO</h1>
+        <h3>Técnico em Informática</h3>
         <p>Serviços técnicos com qualidade e confiança</p>
     </header>
 
-    <section id="servicos">
-        <h2>Serviços Oferecidos</h2>
-        <ul>
-            <li>Reparo de PCs comuns e gamers</li>
-            <li>Montagem e upgrades sob medida</li>
-            <li>Limpeza e substituição de peças</li>
-            <li>Formatação rápida e segura</li>
-            <li>Suporte remoto via TeamViewer ou AnyDesk</li>
-        </ul>
-    </section>
+    <div class="banner-centralizado">
+        <img src="../imagens/banner.png" alt="Banner InfoRaposo" class="banner-central" style="max-width:500px; height:auto; width:100%; margin:40px auto; display:block;">
+    </div>
 
     <section id="orcamentos">
         <h2>Solicite um Orçamento</h2>
@@ -38,47 +31,52 @@
 
     <section id="depoimentos">
         <h2>Depoimentos</h2>
-        <blockquote>
-            “Mauricio salvou meu PC gamer em menos de 24h. Atendimento top!”
-            <footer>— João, Nova Friburgo</footer>
-        </blockquote>
-        <blockquote>
-            “Formatação rápida e suporte remoto excelente. Recomendo demais!”
-            <footer>— Carla, Sumidouro</footer>
-        </blockquote>
-    </section>
-
-    <section id="contato">
-        <h2>Fale comigo</h2>
-        <form onsubmit="enviarFormulario(); return false;">
-            <label for="nome">Seu nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <p>📍 Sumidouro – RJ</p>
-        <p>📲 WhatsApp: <span id="numero">22 99287-1246</span></p>
-        <a href="https://wa.me/5522992871246" target="_blank" class="zap">Abrir WhatsApp</a>
-
-        <div class="redes">
-            <h2>Redes Sociais</h2>
-            <a href="https://www.instagram.com/seuusuario" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30">
-            </a>
-            <a href="https://www.facebook.com/seuusuario" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30">
-            </a>
-            <a href="https://wa.me/5522992871246" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30">
-            </a>
+        <div class="depoimento">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Foto de perfil genérica" class="foto-depoimento">
+            <blockquote>
+                “Mauricio salvou meu PC gamer em menos de 24h. Atendimento top!”
+                <footer>— João, Nova Friburgo</footer>
+            </blockquote>
+        </div>
+        <div class="depoimento">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Foto de perfil genérica" class="foto-depoimento">
+            <blockquote>
+                “Formatação rápida e suporte remoto excelente. Recomendo demais!”
+                <footer>— Carla, Sumidouro</footer>
+            </blockquote>
         </div>
     </section>
 
+    <!-- Seção de contato e redes sociais removida, agora está apenas no rodapé -->
+
     <script src="../script.js/script.js"></script>
+
+    <footer class="rodape-inforaposo">
+        <div class="rodape-conteudo">
+            <div class="rodape-redes">
+                <a href="https://www.instagram.com/seuusuario" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30">
+                </a>
+                <a href="https://www.facebook.com/seuusuario" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30">
+                </a>
+                <a href="https://wa.me/5522992871246" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30">
+                </a>
+            </div>
+            <div class="rodape-endereco">
+                <p>Rua Manoel Francisco Raposo, 108</p>
+                <p>CEP 28637000, Sumidouro RJ</p>
+            </div>
+            <div class="rodape-fale">
+                <a href="https://wa.me/5522992871246" target="_blank" class="rodape-zap">Fale comigo</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="rodape-direitos">
+        <small>&copy; 2025 INFORAPOSO. Todos os direitos reservados.</small>
+    </div>
 </body>
 
 </html>
